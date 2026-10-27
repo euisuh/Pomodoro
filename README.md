@@ -1,28 +1,21 @@
-# Flutter Pomodoro Timer
+# Pomodoro
 
-The Flutter Pomodoro Timer repository is a project crafted with the goal of both learning and mastering Flutter development through practical application. The Pomodoro technique, renowned for its effectiveness in time management, serves as the foundation for this project. With this repository, I've delved into the intricacies of Flutter, honing my skills in UI design, state management, and asynchronous programming.
+Personal Flutter practice project (the repo's own description: a way to learn Flutter by building a Pomodoro timer; commits from January 2023 to April 2024). It is a small app, not a finished product.
 
 ![cover](cover.jpg)
 
-## Features
+## What it does
 
-- Customizable timer settings for Pomodoro and Break intervals
-- Beautiful and minimalistic UI based on [POMO UIKIT design](https://www.behance.net/gallery/98918603/POMO-UIKIT?tracking_source=search_projects%7Cpomo+uikit)
-- Easy-to-use and intuitive interface
-- Option to choose a background color for a personalized experience
+- Onboarding screens (`introduction_screen`), then a home screen with a fixed 25-minute countdown (`twentyFiveMin = 1500` s in `lib/ui/page/home_screen.dart`), start/pause, and a completed-session counter.
+- Rotating "work hard" quotes loaded from `assets/workHardQuote.json`.
+- Visual design follows the [POMO UIKIT](https://www.behance.net/gallery/98918603/POMO-UIKIT) design on Behance.
+- Not implemented: configurable durations, break timers.
 
-## Getting started
+## How to run
 
-- Clone or download the repository
-- Open the project in your favorite IDE
-- Connect your device or run an emulator
-- Run the app by clicking on the run button or using the terminal command `flutter run`
+```
+flutter pub get
+flutter run
+```
 
-## Tech Stack
-
-- Flutter
-- Dart
-
-## Contributing
-
-If you would like to contribute to the project, please feel free to create a pull request. Contributions are welcome and greatly appreciated.
+Needs a Flutter SDK compatible with `sdk: '>=2.18.6 <3.0.0'` in `pubspec.yaml` (Dart 2.x era, early 2023); newer SDKs may need dependency upgrades. I did not build the app when tidying this repo.
